@@ -1,0 +1,13 @@
+micronaut:
+  application:
+    name: demo
+  server:
+    maxRequestSize: 1MB
+    netty:
+      maxHeaderSize: 500KB
+      worker:
+        threads: 16
+      childOptions:
+        autoRead: true
+redis:
+  uri: redis://localhost
